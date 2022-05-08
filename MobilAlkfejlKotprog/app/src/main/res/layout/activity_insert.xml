@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Insert">
+
+    <EditText
+        android:id="@+id/Jarat_nev_ins"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="Járat neve"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Jarat_indulas_ins"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/Jarat_indulas_ins"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Indul"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Jarat_erekezes_ins"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Jarat_nev_ins" />
+
+    <EditText
+        android:id="@+id/Jarat_erekezes_ins"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:hint="Érkezik"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/perc_ins"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Jarat_indulas_ins" />
+
+    <EditText
+        android:id="@+id/perc_ins"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="Indulás perc (0-59)"
+        android:inputType="number"
+        android:maxEms="59"
+        android:minEms="0"
+        app:layout_constraintBottom_toTopOf="@+id/unnep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Jarat_erekezes_ins" />
+
+    <Switch
+        android:id="@+id/unnep"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="50dp"
+        android:text="Ünnep napokon is közlekedik"
+        app:layout_constraintBottom_toTopOf="@+id/insert_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perc_ins" />
+
+    <Button
+        android:id="@+id/insert_btn"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="93dp"
+        android:backgroundTint="#2E7D32"
+        android:onClick="insert"
+        android:text="Új járat hozzáadása"
+        android:textColor="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unnep" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:layout_marginBottom="50dp"
+        android:text="Új járat hozzáadása"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/Jarat_nev_ins"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

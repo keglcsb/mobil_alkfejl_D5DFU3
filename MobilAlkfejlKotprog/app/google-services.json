@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "317179951763",
+    "project_id": "mobilalkfejlkotprog",
+    "storage_bucket": "mobilalkfejlkotprog.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317179951763:android:0167dcd3ee7a80a6aeab66",
+        "android_client_info": {
+          "package_name": "hu.kotprog.mobilalkfejlkotprog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317179951763-95h8m8r876jja8m8l7kkgbr6mrrimk7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1DSM1-DGndWIHNRTb590sOknRWA_M3M0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317179951763-95h8m8r876jja8m8l7kkgbr6mrrimk7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
